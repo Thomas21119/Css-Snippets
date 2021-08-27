@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>CSS Snippets</title>
+</head>
+<body>
+    <header>
+        <h1>Toms CSS Snippets and help</h1>
+        <nav>
+            <ul class="navigation">
+                <li>Navigation bar area</li>
+                <li>Navigation bar area</li>
+                <li>Navigation bar area</li>
+                <li>Navigation bar area</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="card" class="table">
+            <h2 class="heading">Selectors Format</h2>
+            <table class="linear-gradient-background">
+                <tr>
+                    <th>Selector</th>
+                    <th>Example</th>
+                    <th>Example description</th>
+                </tr>
+                <tr>
+                    <td>[attribute$=value]</td>
+                    <td>a[href$=".pdf"]</td>
+                    <!--"&lt" puts <symbol shown in page and "&gt" shows > symbol in page-->
+                    <td>Selects every &lta&gt element whose href attribute value ends with ".pdf"</td>
+                </tr>
+                <tr>
+                    <td>[attribute^=value]</td>
+                    <td>a[href^="https"]</td>
+                    <td>Selects every &lta> element whose href attribute value begins with "https"</td>
+                </tr>
+                <tr>
+                    <td>[attribute*=value]</td>
+                    <td>a[href*="w3schools"]</td>
+                    <td>Selects every &lta> element whose href attribute value contains the substring "w3schools"</td>
+                </tr>
+            </table>
+        </div>
+        <div class="card">
+            <h2 class="heading">Box Transition Glow</h2>
+            <!--Cant use proper Indentation Because Pre will put in all spaces-->
+            <pre class="linear-gradient-background">
+.code-card .card-header {
+border-radius: 8px;
+transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+box-shadow: inset 0px 0px 8px 
+rgba(232, 102, 236, 1), 0 0 15px 
+rgba(232, 102, 236, 1);
+}           </pre>
+            </div>
+        <div class="card">
+            <h2 class="heading"> Linear Gradients </h2>
+            <pre class="linear-gradient-background">
+.linear-gradient-background {
+background-image: linear-gradient(
+rgba(232, 102, 236, 0.3) 0%,
+rgba(232, 102, 236, 0.6) 100%
+);
+}
+            </pre>
+        </div>
+    </main>
+    <footer>
+        <h3>Made By Tom Using CSS and HTML</h3>
+    </footer>
+</body>
+</html>

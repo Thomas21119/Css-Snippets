@@ -1,0 +1,158 @@
+* {
+    background-color: rgb(63, 63, 63);
+    flex-wrap: wrap;
+}
+
+:root {
+    --card-colour: rgb(73, 23, 73);
+    --background-colour: rgb(63, 63, 63);
+    --border-radius: 20px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+pre, p {
+    color: white;
+    background-color: var(--card-colour);
+    border-radius: var(--border-radius);
+}
+
+pre {
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+    /* makes text wrap */
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+pre {
+
+}
+
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 0px 20px 0px;
+    background-color: limegreen;
+    border: 20px solid limegreen;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin: 0px 20px;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+table, th, td {
+    border: 1px solid;
+    margin: 2px 2px;
+    border-color: black;
+    color: white;
+    margin: 0 auto;
+    background-color: var(--card-colour);
+    border-radius: 5px;
+}
+
+table, .table {
+    flex: 1 0 300px;
+    margin: 5px;
+}
+
+.heading{
+    margin: 10px;
+    color: hotpink;
+    background-color: rgb(63, 63, 63);
+    text-align: center;
+    font-size: 32px;
+    font-family: serif;
+    border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+}
+
+.card {
+    width: 30%;
+    height: auto;
+    border: 2px dashed white;
+    flex-wrap: wrap;
+    display: inline;
+    border-radius: var(--border-radius);
+    transition: all 0.5s ease-in-out;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.linear-gradient-background {
+    background-image: linear-gradient(
+      rgba(251, 0, 155, 0.3) 0%,
+      rgba(0, 186, 253, 0.6) 100%
+    );
+  }
+    
+.card:hover {
+    box-shadow: inset 0px 0px 8px 
+    rgb(5, 255, 168), 0 0 15px 
+    rgb(5, 255, 168);
+    }           
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: limegreen;
+    border: 20px solid limegreen;
+    margin: 20px 0 0 0; 
+    margin-top: auto;
+}
+
+footer h3 {
+    background-color: limegreen;
+    display: flex;
+
+}
+
+@media screen and (min-width: 1300px) {
+    main {
+        display: flex;
+    }
+    .card {
+        flex: 0 0 30%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    main {
+        display: flex;
+    }
+    .card {
+        flex: 0 0 45%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        display: flex;
+    }
+    .card{
+        flex-wrap: wrap;
+        flex: 0 0 90%;
+    }
+}
