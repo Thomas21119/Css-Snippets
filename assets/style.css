@@ -34,10 +34,6 @@ pre {
     word-wrap: break-word;
 }
 
-pre {
-
-}
-
 header {
     display:flex;
     flex-direction: row;
@@ -45,23 +41,30 @@ header {
     margin: 0px 0px 20px 0px;
     background-color: limegreen;
     border: 20px solid limegreen;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 header nav ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    background-color: limegreen;
+    list-style: decimal;
 }
 
 header nav ul li {
     margin: 0px 20px;
+    background-color: limegreen;
 }
 
 main{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 50px 50px 20px 20px;
 }
 
 table, th, td {
@@ -150,6 +153,7 @@ footer h3 {
 @media screen and (max-width: 1000px) {
     main {
         display: flex;
+        margin: 90px 90px 20px 20px;
     }
     .card{
         flex-wrap: wrap;
