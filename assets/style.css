@@ -1,12 +1,14 @@
 * {
-    background-color: rgb(63, 63, 63);
+    background-color: var(--background-colour);
     flex-wrap: wrap;
+    scroll-padding-top: -285px;
 }
 
 :root {
     --card-colour: rgb(73, 23, 73);
-    --background-colour: rgb(63, 63, 63);
+    --background-colour: white;
     --border-radius: 20px;
+    --section-background-colour: #26abff;
 }
 
 body{
@@ -15,7 +17,7 @@ body{
 }
 
 pre, p {
-    color: white;
+    color: black;
     background-color: var(--card-colour);
     border-radius: var(--border-radius);
 }
@@ -34,30 +36,37 @@ pre {
     word-wrap: break-word;
 }
 
+h1 {
+    background-color: var(--section-background-colour);
+    color: white;
+}
+
 header {
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 0px 0px 20px 0px;
-    background-color: limegreen;
-    border: 20px solid limegreen;
+    background-color: var(--section-background-colour);
+    border: 20px solid var(--section-background-colour);
     position: fixed;
     top: 0;
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
 }
 
+  
 header nav ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    background-color: limegreen;
-    list-style: decimal;
+    background-color: var(--section-background-colour);
+    list-style: disc;
 }
 
-header nav ul li {
-    margin: 0px 20px;
-    background-color: limegreen;
+header nav ul li a, header nav ul li {
+    margin: 0px 20px 0px 20px;
+    background-color: var(--section-background-colour);
+    color: white;
 }
 
 main{
@@ -71,9 +80,9 @@ table, th, td {
     border: 1px solid;
     margin: 2px 2px;
     border-color: black;
-    color: white;
+    color: black;
+    background-color: rgba(243, 79, 243, 0.6);
     margin: 0 auto;
-    background-color: var(--card-colour);
     border-radius: 5px;
 }
 
@@ -84,50 +93,50 @@ table, .table {
 
 .heading{
     margin: 10px;
-    color: hotpink;
-    background-color: rgb(63, 63, 63);
+    color: white;
+    background-color: var(--section-background-colour);
     text-align: center;
     font-size: 32px;
     font-family: serif;
-    border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+    border-radius: 15px;
 }
 
 .card {
     width: 30%;
     height: auto;
-    border: 2px dashed white;
+    border: 2px dashed rgb(0, 255, 251);
     flex-wrap: wrap;
     display: inline;
     border-radius: var(--border-radius);
     transition: all 0.5s ease-in-out;
     justify-content: space-between;
-    margin: 20px;
+    margin: 20px; 
 }
 
 .linear-gradient-background {
     background-image: linear-gradient(
-      rgba(251, 0, 155, 0.3) 0%,
-      rgba(0, 186, 253, 0.6) 100%
+        rgb(246, 190, 146) 0%,
+        rgba(243, 79, 243, 0.6) 100%
     );
   }
     
 .card:hover {
     box-shadow: inset 0px 0px 8px 
-    rgb(5, 255, 168), 0 0 15px 
-    rgb(5, 255, 168);
+    blue, 0 0 15px 
+    blue;
     }           
 
 footer {
     display: flex;
     justify-content: center;
-    background-color: limegreen;
-    border: 20px solid limegreen;
+    background-color: var(--section-background-colour);
+    border: 20px solid var(--section-background-colour);
     margin: 20px 0 0 0; 
     margin-top: auto;
 }
 
 footer h3 {
-    background-color: limegreen;
+    background-color: var(--section-background-colour);
     display: flex;
 
 }
