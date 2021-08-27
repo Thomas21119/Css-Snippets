@@ -148,6 +148,10 @@ footer h3 {
     .card {
         flex: 0 0 30%;
     }
+    header {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }
 
 @media screen and (max-width: 1300px) {
